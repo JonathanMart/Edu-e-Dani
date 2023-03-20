@@ -922,6 +922,17 @@
         <div>
           <div class="polaroid">
 
+            <a href="img/Padrinhos/Ana e Jonathan.png" data-fancybox="galeria">
+              <img src="img/Padrinhos/Ana e Jonathan.png" alt="">
+            </a>
+            <div class="padrinhos">
+              <h1>Ana Paula <span>&</span> Jonathan</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="polaroid">
+
             <a href="img/Padrinhos/Erica (Kika).png" data-fancybox="galeria">
               <img src="img/Padrinhos/Erica (Kika).png" alt="">
             </a>
@@ -1039,7 +1050,7 @@
 
         <div class="w-100">
 
-          <a target="_blank" href="https://www.instagram.com/explore/tags/lucasypame" class="hashtag">#vitoreluisa</a>
+          <a target="_blank" href="https://www.instagram.com/explore/tags/lucasypame" class="hashtag">#daniedu</a>
 
         </div>
 
@@ -1061,7 +1072,7 @@
         <div class="col-md-6 col-nombres-footer d-flex justify-content-center align-items-center">
 
           <h4>
-            Daniella <br class='d-md-none'>
+            Danielle <br class='d-md-none'>
             <span>&</span>
             <br class='d-md-none'>
             Eduardo
@@ -1107,7 +1118,7 @@
                 <span class="start">2023-04-24 09:28:42</span>
                 <span class="end">2023-04-24 09:28:42</span>
                 <span class="timezone">America/Sao_Paulo</span>
-                <span class="title">Casamento de Vítor e Luísa (Cerimônia)</span>
+                <span class="title">Casamento de Danielle e Eduardo (Cerimônia)</span>
 
               </div>
             </li>
@@ -1123,32 +1134,6 @@
     </div>
   </section>
   <!-- Firma-->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-
-          <p>
-            Desenvolvido com <span class="heart">&#129505;</span> por <a href="https://fixdate.io/br/"
-              target="_blank">Fixdate</a>
-          </p>
-
-
-          <!-- Modal cambio de idioma -->
-
-          <p>
-            <img class="current-flag" width="20" height="20"
-              src="https://fixdate.io/public/images/iconos-paises/pt-BR.svg" alt="">
-            <a href="#" data-toggle="modal" data-target="#modal-lang">Mudar pais</a>
-          </p>
-
-
-        </div>
-      </div>
-    </div>
-  </footer>
-
 
   <!-- Musica -->
 
@@ -1190,12 +1175,12 @@
 
           <div class="formulario-content">
 
-            <form id="formAsistencia" action="">
+            <form id="formAsistencia" action="https://api.sheetmonkey.io/form/9yuG6yCMdxmeXXRSyLrdxt" method="post">
 
 
               <div class="form-group d-flex justify-content-around custom-control custom-radio custom-control-inline">
                 <div class="form-check">
-                  <input class="form-check-input custom-control-input" type="radio" name="asistencia" id="1" value="Si"
+                  <input class="form-check-input custom-control-input" type="radio" name="name" id="name" value="Sim"
                     checked>
                   <label class="form-check-label custom-control-label" for="1">
                     Sim! eu confirmo </label>
@@ -1208,7 +1193,7 @@
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="nombreAsistente" name='nombre' placeholder="Nome completo">
+                <input type="text" class="form-control" id="nombreAsistente" name='nombre' placeholder="Nome completo" required="" >
               </div>
 
 
@@ -1234,7 +1219,7 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" id="sendAsistencia" class="boton">Enviar</button>
+          <button type="submit" id="sendAsistencia" class="boton">Enviar</button>
         </div>
 
 
@@ -2336,7 +2321,7 @@
 
 
   <!-- Modal Confirmar asistencia -->
-  <script>
+  <<script>
     // Abrir modal
     $('body').on('click', 'a.confirmar-asistencia', function (e) {
 
