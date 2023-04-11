@@ -1,36 +1,47 @@
 const btnMusic = document.getElementById("play-music-modal")
-const btnPause = document.getElementById("btnPause")
+
 const btnPlay = document.getElementById("btnPlay")
-const audio = new Audio ('assets/musica.mp3')
+const audio = new Audio ('music/musica.mp3')
 
 
 
+//abrir musica pelo modal
 function tocarMusica() {
     audio.play()
+
+
 }
 
 
+// array do botao play pause da pagina, fora do modal
+const funcoesMusic = [
+
+    function() {
+      audio.play()
+    },
+    function() {
+      audio.pause()
+    }
+
+  ];
+  
+  let contador = 0;
+  
+
+  
+ function controlerMusic () {
+    funcoesMusic[contador]();
+    contador++;
+    if (contador >= funcoesMusic.length) {
+      contador = 0;
+    }
+  };
 
 
 
 
-function  playMusica() {
-    audio.play()
-    btnPlay.classList.add(".hide")
 
 
-    btnPause.classList.remove(".hide")
-    console.log("Play")
-}
 
 
-function pauseMusica() {
-    audio.pause()
-
-    btnPause.classList.add(".hide")
-
-    btnPlay.classList.remove(".hide")
-    console.log("Pause")
-   
-}
 
